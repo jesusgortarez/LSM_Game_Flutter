@@ -61,12 +61,7 @@ void main() async {
                     // La ruta para Image.asset debe ser relativa a la raíz del proyecto,
                     // empezando desde 'assets/...' o como esté declarado en pubspec.yaml
                     final assetPath = p
-                        .join(
-                          //illustrationsSourceDir,
-                          levelDirName,
-                          categoryDirName,
-                          fileName,
-                        )
+                        .join(illustrationsSourceDir, levelDirName, categoryDirName, fileName)
                         .replaceAll(r'\', '/'); // Asegura separadores '/'
 
                     print('Encontrada: $assetPath (Nombre: $name, Cat: $category, Nivel: $nivel)');

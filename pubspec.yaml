@@ -20,6 +20,11 @@ dev_dependencies:
   flutter_asset_generator: ^1.2.0
   flutter_lints: ^5.0.0
 flutter:
+  assets:
+    - assets/Nivel_1/
+    - assets/Nivel_1/A6_ilustraciones/
+    - assets/Nivel_1/B_ilustraciones/
+    - assets/Nivel_2/
+    - assets/Nivel_2/C_ilustraciones/
+    - assets/Nivel_2/DZ_ilustraciones/
   uses-material-design: true
-assets:
-  - assets/

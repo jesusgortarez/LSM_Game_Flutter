@@ -9,7 +9,7 @@ class GameConstants {
 
   // Constantes del juego 1
   static Duration GAME_TICK = Duration(milliseconds: 33); // 30 FPS
-  static final Map<int, double> TARGET_FALL_DURATION_SECONDS = {1: 4.0, 2: 3.43};
+  static final Map<int, double> TARGET_FALL_DURATION_SECONDS = {1: 6.0, 2: 4.0 };
   static final Map<int, double> ILLUSTRATION_LIFETIME = {1: 4.0, 2: 3.43};
   static final Map<int, int> MAX_FALLING_ILLUSTRATIONS = {1: 1, 2: 1};
   static final Map<int, Duration> SPAWN_INTERVAL = {
