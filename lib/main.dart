@@ -1,12 +1,18 @@
 // lib/main.dart
 
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart'; // Para orientación
+import 'package:flutter/services.dart'; // Asegúrate de tener esta importación
 import 'screens/home_screen.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
-  SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]).then((_) {
+  // Permite todas las orientaciones
+  SystemChrome.setPreferredOrientations([
+    DeviceOrientation.portraitUp,
+    DeviceOrientation.portraitDown,
+    DeviceOrientation.landscapeLeft,
+    DeviceOrientation.landscapeRight,
+  ]).then((_) {
     runApp(const MyApp());
   });
 }
@@ -25,7 +31,6 @@ class MyApp extends StatelessWidget {
         elevatedButtonTheme: ElevatedButtonThemeData(
           style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8))),
         ),
-        // Puedes añadir un estilo de texto base aquí si quieres
         textTheme: const TextTheme(headlineMedium: TextStyle(fontSize: 24.0)),
       ),
       home: const HomeScreen(),
